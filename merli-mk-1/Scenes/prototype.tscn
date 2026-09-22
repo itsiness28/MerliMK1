@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bt3wxf5o6cted"]
+
+[ext_resource type="Texture2D" uid="uid://dww8yu2ykfubb" path="res://icon.svg" id="1_4ousu"]
+[ext_resource type="Script" uid="uid://ck36w5m3mgaiw" path="res://Scenes/SC_prototype.gd" id="2_6koui"]
+
+[node name="Prototype" type="Node2D" unique_id=2095685285]
+script = ExtResource("2_6koui")
+
+[node name="Button" type="Button" parent="." unique_id=701483885]
+offset_left = 361.0
+offset_top = 287.0
+offset_right = 497.0
+offset_bottom = 423.0
+icon = ExtResource("1_4ousu")
+
+[node name="Label" type="Label" parent="." unique_id=21288661]
+offset_left = 22.0
+offset_top = 16.0
+offset_right = 121.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 37
+text = "Score"
