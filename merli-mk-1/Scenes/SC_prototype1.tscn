@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cv2bc1m765bj5"]
+
+[ext_resource type="Script" uid="uid://retduoj3twcs" path="res://Script/SP_prototype_1.gd" id="1_hrumc"]
+
+[node name="ScPrototype1" type="Node2D" unique_id=75382792]
+script = ExtResource("1_hrumc")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1719758596]
+offset_right = 1166.0
+offset_bottom = 659.0
+
+[node name="Label" type="Label" parent="." unique_id=667538163]
+offset_left = 265.0
+offset_top = 190.0
+offset_right = 959.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0.0023275556, 0, 0.012617188, 1)
+theme_override_font_sizes/font_size = 34
+text = "¡Bienvenido a la simulación de MerlinMK1!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1080660375]
+offset_left = 447.0
+offset_top = 336.0
+offset_right = 715.0
+offset_bottom = 423.0
+theme_override_font_sizes/font_size = 47
+text = "Iniciar"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

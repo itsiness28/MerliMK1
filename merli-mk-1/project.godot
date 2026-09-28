@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="MerliMK1"
-run/main_scene="uid://dlbtrn25kip31"
+run/main_scene="uid://cv2bc1m765bj5"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalVars="*uid://be23y0f83v0mw"
 
 [physics]
 

@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://c3i08tmpbfk78"]
+
+[ext_resource type="Script" uid="uid://dvpwmcxaj8uop" path="res://Script/SP_prototype_2.gd" id="1_d204o"]
+
+[node name="ScPrototype2" type="Node2D" unique_id=1475310186]
+script = ExtResource("1_d204o")
+
+[node name="Background" type="ColorRect" parent="." unique_id=810511122]
+offset_right = 1171.0
+offset_bottom = 662.0
+color = Color(0.7176471, 1, 1, 1)
+
+[node name="L_totalmoney" type="Label" parent="." unique_id=1461451637]
+offset_left = 212.0
+offset_top = 295.0
+offset_right = 497.0
+offset_bottom = 414.0
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_font_sizes/font_size = 50
+text = "Value"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="B_getmoney" type="Button" parent="." unique_id=1667571781]
+offset_left = 753.0
+offset_top = 167.0
+offset_right = 995.0
+offset_bottom = 250.0
+theme_override_font_sizes/font_size = 24
+text = "Conseguir moneda"
+
+[node name="B_automation" type="Button" parent="." unique_id=417209037]
+offset_left = 756.0
+offset_top = 296.0
+offset_right = 999.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 25
+text = "Automatizar"
+
+[node name="B_multiplier" type="Button" parent="." unique_id=530695157]
+offset_left = 757.0
+offset_top = 427.0
+offset_right = 1002.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 25
+text = "Multiplicador"
+
+[node name="Timer" type="Timer" parent="." unique_id=1975628900]
+wait_time = 2.0
+ignore_time_scale = true
+
+[connection signal="pressed" from="B_getmoney" to="." method="_on_b_getmoney_pressed"]
+[connection signal="pressed" from="B_automation" to="." method="_on_b_automation_pressed"]
+[connection signal="pressed" from="B_multiplier" to="." method="_on_b_multiplier_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
