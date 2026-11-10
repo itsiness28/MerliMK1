@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cqit3m61p2b7q"]
+
+[ext_resource type="Texture2D" uid="uid://dk7wrdmhovk24" path="res://Assets/potionplaceholder.webp" id="1_vd40d"]
+[ext_resource type="FontFile" uid="uid://52uchsfpab87" path="res://Fonts/PositionsByArixbored-Regular .otf" id="2_st08h"]
+
+[node name="ScMainPlay" type="Node2D" unique_id=2132716307]
+
+[node name="CR_Background" type="ColorRect" parent="." unique_id=1601796129]
+offset_left = -13.0
+offset_top = -6.0
+offset_right = 1164.0
+offset_bottom = 647.0
+color = Color(0.9490196, 0.46666667, 0.20784314, 1)
+
+[node name="BUT_Potion" type="Button" parent="." unique_id=2048662271]
+offset_left = 363.0
+offset_top = 148.0
+offset_right = 731.0
+offset_bottom = 516.0
+theme_override_icons/icon = ExtResource("1_vd40d")
+
+[node name="CR_MoneyBackground" type="ColorRect" parent="." unique_id=1870138396]
+offset_left = 23.0
+offset_top = 11.0
+offset_right = 216.0
+offset_bottom = 70.0
+color = Color(0.2509804, 0.08627451, 0.972549, 1)
+
+[node name="LBL_Money" type="Label" parent="." unique_id=46870524]
+offset_left = 31.0
+offset_top = 17.0
+offset_right = 207.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("2_st08h")
+theme_override_font_sizes/font_size = 29
+text = "text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BUT_LeftPanel" type="Button" parent="." unique_id=2050528224]
+offset_left = -2.0
+offset_top = 293.0
+offset_right = 53.0
+offset_bottom = 365.0
+text = ">"
+
+[node name="Button" type="Button" parent="." unique_id=81013498]
+offset_left = 1104.0
+offset_top = 298.0
+offset_right = 1161.0
+offset_bottom = 372.0
+text = "<"

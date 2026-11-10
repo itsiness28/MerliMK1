@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bhtr6x5j4huuv"]
+
+[ext_resource type="Script" uid="uid://c101lf8obi62b" path="res://Script/SP_main_menu.gd" id="1_ijpsa"]
+[ext_resource type="FontFile" uid="uid://5f8fiwhmtrk4" path="res://Fonts/RASCAL__.TTF" id="2_xkpew"]
+
+[node name="ScMainMenu" type="Node2D" unique_id=1773020132]
+script = ExtResource("1_ijpsa")
+
+[node name="CR_Background" type="ColorRect" parent="." unique_id=236745974]
+offset_right = 1155.0
+offset_bottom = 653.0
+color = Color(0.2509804, 0.08627451, 0.972549, 1)
+
+[node name="BUT_Play" type="Button" parent="." unique_id=1854749111]
+offset_left = 404.0
+offset_top = 214.0
+offset_right = 740.0
+offset_bottom = 312.0
+theme_override_colors/icon_normal_color = Color(0.9411765, 0.7764706, 0.023529412, 1)
+theme_override_colors/icon_pressed_color = Color(0.61604124, 0.50509256, 0.009115952, 1)
+theme_override_fonts/font = ExtResource("2_xkpew")
+theme_override_font_sizes/font_size = 71
+text = "Jugar"
+
+[node name="BUT_Escape" type="Button" parent="." unique_id=749548754]
+offset_left = 477.0
+offset_top = 355.0
+offset_right = 665.0
+offset_bottom = 406.0
+theme_override_fonts/font = ExtResource("2_xkpew")
+theme_override_font_sizes/font_size = 37
+text = "Salir"
+
+[connection signal="button_down" from="BUT_Play" to="." method="_on_but_play_button_down"]
+[connection signal="button_down" from="BUT_Escape" to="." method="_on_but_escape_button_down"]
