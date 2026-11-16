@@ -16,10 +16,10 @@ offset_bottom = 647.0
 color = Color(0.9490196, 0.46666667, 0.20784314, 1)
 
 [node name="BUT_Potion" type="Button" parent="." unique_id=2048662271]
-offset_left = 384.0
-offset_top = 151.0
-offset_right = 752.0
-offset_bottom = 519.0
+offset_left = 387.0
+offset_top = 124.0
+offset_right = 755.0
+offset_bottom = 492.0
 theme_override_icons/icon = ExtResource("1_vd40d")
 
 [node name="CR_MoneyBackground" type="ColorRect" parent="." unique_id=1870138396]
