@@ -2,6 +2,7 @@ extends Node2D
 var PotionCount = 0 
 var Modificator = 1
 var Mis_TotalPotionCount = 0 
+var Mision1Activa = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -46,7 +47,8 @@ func _on_but_close_left_panel_pressed() -> void:
 
 func _on_but_potion_pressed() -> void:
 	PotionCount = PotionCount + (1 * Modificator)
-	$PB_Mision1.value += 1
+	if Mision1Activa == true: 
+		$PB_Mision1.value += 1
 
 
 func _on_but_close_right_panel_pressed() -> void:
@@ -62,6 +64,9 @@ func _on_but_close_right_panel_pressed() -> void:
 	$LBL_MejorasGnomos.visible = false
 	$LBL_MejorasGnomosDesc.visible = false
 	$BUT_MejorasGnomosCom.visible = false
+	$LBL_MisionDescription.visible = false
+	$LBL_MisionName.visible = false
+	$BUT_MisionActivated.visible = false
 	
 	
 
@@ -78,6 +83,10 @@ func _on_but_panel_misiones_pressed() -> void:
 	$BUT_MejorasGnomosCom.visible = false
 	$LBL_MejorasGnomos.visible = false
 	$LBL_MejorasGnomosDesc.visible = false
+	
+	$LBL_MisionDescription.visible = true
+	$LBL_MisionName.visible = true
+	$BUT_MisionActivated.visible = true
 
 
 func _on_but_panel_mejoras_pressed() -> void:
@@ -85,3 +94,13 @@ func _on_but_panel_mejoras_pressed() -> void:
 	$LBL_MejorasGnomos.visible = true
 	$LBL_MejorasGnomosDesc.visible = true
 	
+	$LBL_MisionDescription.visible = false
+	$LBL_MisionName.visible = false
+	$BUT_MisionActivated.visible = false
+
+#activar mision 
+func _on_but_mision_activated_pressed() -> void:
+	Mision1Activa = true
+	$BUT_MisionActivated.disabled = true
+	$PB_Mision1.visible = true
+	$LBL_MisionNameDashboard.visible = true

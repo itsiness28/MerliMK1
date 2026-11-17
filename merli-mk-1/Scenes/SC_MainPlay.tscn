@@ -72,6 +72,7 @@ offset_bottom = 375.0
 text = "<"
 
 [node name="CR_RightPanel" type="ColorRect" parent="." unique_id=268396991]
+visible = false
 offset_left = 247.0
 offset_top = -2.0
 offset_right = 1161.0
@@ -79,6 +80,7 @@ offset_bottom = 644.0
 color = Color(0.24912839, 0.08729998, 0.97, 0.90588236)
 
 [node name="BUT_CloseRightPanel" type="Button" parent="." unique_id=428619990]
+visible = false
 offset_left = 188.0
 offset_top = 301.0
 offset_right = 245.0
@@ -86,6 +88,7 @@ offset_bottom = 375.0
 text = ">"
 
 [node name="BUT_PanelMejoras" type="Button" parent="." unique_id=623892716]
+visible = false
 offset_left = 290.0
 offset_top = 39.0
 offset_right = 462.0
@@ -93,6 +96,7 @@ offset_bottom = 102.0
 text = "Mejoras"
 
 [node name="BUT_PanelMisiones" type="Button" parent="." unique_id=171306254]
+visible = false
 offset_left = 293.0
 offset_top = 137.0
 offset_right = 462.0
@@ -101,6 +105,7 @@ text = "Misiones de
 historia"
 
 [node name="BUT_PanelEncargos" type="Button" parent="." unique_id=435119307]
+visible = false
 offset_left = 297.0
 offset_top = 229.0
 offset_right = 463.0
@@ -108,6 +113,7 @@ offset_bottom = 290.0
 text = "Encargos"
 
 [node name="BUT_PanelReputacion" type="Button" parent="." unique_id=7371604]
+visible = false
 offset_left = 296.0
 offset_top = 314.0
 offset_right = 472.0
@@ -115,6 +121,7 @@ offset_bottom = 374.0
 text = "Reputación"
 
 [node name="BUT_PanelConversaciones" type="Button" parent="." unique_id=1001006863]
+visible = false
 offset_left = 297.0
 offset_top = 400.0
 offset_right = 469.0
@@ -123,6 +130,7 @@ text = "Conversaciones
 "
 
 [node name="LBL_MejorasGnomos" type="Label" parent="." unique_id=900660653]
+visible = false
 offset_left = 571.0
 offset_top = 48.0
 offset_right = 801.0
@@ -132,6 +140,7 @@ theme_override_font_sizes/font_size = 37
 text = "GNOMOS                                      24 "
 
 [node name="LBL_MejorasGnomosDesc" type="Label" parent="." unique_id=325619979]
+visible = false
 offset_left = 575.0
 offset_top = 101.0
 offset_right = 1135.0
@@ -144,6 +153,7 @@ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
  velit esse cillum dolore eu fugiat nulla pariatur."
 
 [node name="BUT_MejorasGnomosCom" type="Button" parent="." unique_id=934057193]
+visible = false
 offset_left = 935.0
 offset_top = 274.0
 offset_right = 1104.0
@@ -151,14 +161,58 @@ offset_bottom = 323.0
 text = "Comprar"
 
 [node name="PB_Mision1" type="ProgressBar" parent="." unique_id=1193420876]
+visible = false
 offset_left = 14.0
 offset_top = 577.0
 offset_right = 166.0
 offset_bottom = 629.0
+
+[node name="LBL_MisionNameDashboard" type="Label" parent="." unique_id=1423712792]
+visible = false
+offset_left = 13.0
+offset_top = 510.0
+offset_right = 288.0
+offset_bottom = 559.0
+text = "Misión actual: Llega a
+100 pociones!"
+
+[node name="LBL_MisionName" type="Label" parent="." unique_id=1179332709]
+visible = false
+offset_left = 556.0
+offset_top = 48.0
+offset_right = 629.0
+offset_bottom = 71.0
+theme_override_fonts/font = ExtResource("4_kq218")
+theme_override_font_sizes/font_size = 40
+text = "GNOMOS"
+
+[node name="LBL_MisionDescription" type="Label" parent="." unique_id=1397358240]
+visible = false
+offset_left = 564.0
+offset_top = 108.0
+offset_right = 1027.0
+offset_bottom = 225.0
+text = "Llega a 100 pociones (y sin la ayuda de modificadores, ¿eh?
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+ velit esse cillum dolore eu fugiat nulla pariatur."
+
+[node name="BUT_MisionActivated" type="Button" parent="." unique_id=1846687048]
+visible = false
+offset_left = 915.0
+offset_top = 313.0
+offset_right = 1136.0
+offset_bottom = 375.0
+text = "Comenzar misión"
 
 [connection signal="pressed" from="BUT_Potion" to="." method="_on_but_potion_pressed"]
 [connection signal="button_down" from="BUT_LeftPanel" to="." method="_on_but_left_panel_button_down"]
 [connection signal="button_down" from="BUT_RightPanel" to="." method="_on_but_right_panel_button_down"]
 [connection signal="pressed" from="BUT_CloseLeftPanel" to="." method="_on_but_close_left_panel_pressed"]
 [connection signal="pressed" from="BUT_CloseRightPanel" to="." method="_on_but_close_right_panel_pressed"]
+[connection signal="pressed" from="BUT_PanelMisiones" to="." method="_on_but_panel_misiones_pressed"]
 [connection signal="pressed" from="BUT_MejorasGnomosCom" to="." method="_on_but_mejoras_gnomos_com_pressed"]
+[connection signal="pressed" from="BUT_MisionActivated" to="." method="_on_but_mision_activated_pressed"]
