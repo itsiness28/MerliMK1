@@ -1,6 +1,7 @@
 extends Node2D
 var PotionCount = 0 
 var Modificator = 1
+#var Mis_TotalPotionCount = 0 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,6 +11,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	$LBL_Money.text = str(PotionCount)
+	
 
 
 func _on_but_right_panel_button_down() -> void:
@@ -42,6 +44,7 @@ func _on_but_close_left_panel_pressed() -> void:
 #clicker
 func _on_but_potion_pressed() -> void:
 	PotionCount = PotionCount + (1 * Modificator)
+	#$PB_Mision1.value += 1
 
 #open general menu
 func _on_but_close_right_panel_pressed() -> void:
@@ -76,8 +79,9 @@ func _on_but_panel_misiones_pressed() -> void:
 	$LBL_MejorasGnomos.visible = false
 	$LBL_MejorasGnomosDesc.visible = false
 
-#general menu- reopen power up panel
+#general menu - reopen power up panel
 func _on_but_panel_mejoras_pressed() -> void:
 	$BUT_MejorasGnomosCom.visible = true
 	$LBL_MejorasGnomos.visible = true
 	$LBL_MejorasGnomosDesc.visible = true
+	
