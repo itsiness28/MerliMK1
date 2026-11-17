@@ -123,7 +123,6 @@ text = "Conversaciones
 "
 
 [node name="LBL_MejorasGnomos" type="Label" parent="." unique_id=900660653]
-visible = false
 offset_left = 571.0
 offset_top = 48.0
 offset_right = 801.0
@@ -133,7 +132,6 @@ theme_override_font_sizes/font_size = 37
 text = "GNOMOS                                      24 "
 
 [node name="LBL_MejorasGnomosDesc" type="Label" parent="." unique_id=325619979]
-visible = false
 offset_left = 575.0
 offset_top = 101.0
 offset_right = 1135.0
@@ -146,7 +144,6 @@ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
  velit esse cillum dolore eu fugiat nulla pariatur."
 
 [node name="BUT_MejorasGnomosCom" type="Button" parent="." unique_id=934057193]
-visible = false
 offset_left = 935.0
 offset_top = 274.0
 offset_right = 1104.0
@@ -164,3 +161,4 @@ offset_bottom = 629.0
 [connection signal="button_down" from="BUT_RightPanel" to="." method="_on_but_right_panel_button_down"]
 [connection signal="pressed" from="BUT_CloseLeftPanel" to="." method="_on_but_close_left_panel_pressed"]
 [connection signal="pressed" from="BUT_CloseRightPanel" to="." method="_on_but_close_right_panel_pressed"]
+[connection signal="pressed" from="BUT_MejorasGnomosCom" to="." method="_on_but_mejoras_gnomos_com_pressed"]
