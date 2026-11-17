@@ -12,8 +12,6 @@ func _process(delta: float) -> void:
 	$LBL_Money.text = str(PotionCount)
 
 
-
-
 func _on_but_right_panel_button_down() -> void:
 	$BUT_RightPanel.visible = false
 	$BUT_CloseRightPanel.visible = true
@@ -28,27 +26,29 @@ func _on_but_right_panel_button_down() -> void:
 	$BUT_MejorasGnomosCom.visible = true
 
 
+#DEPRECATED
 func _on_but_left_panel_button_down() -> void:
 	$BUT_LeftPanel.visible = false
 	$BUT_CloseLeftPanel.visible = true
 	$CR_LeftPanel.visible = true
 	
 
+#DEPRECATED
 func _on_but_close_left_panel_pressed() -> void:
 	$BUT_LeftPanel.visible = true
 	$BUT_CloseLeftPanel.visible = false
 	$CR_LeftPanel.visible = false
 
-
-
-
+#clicker
 func _on_but_potion_pressed() -> void:
 	PotionCount = PotionCount + (1 * Modificator)
 
-
+#open general menu
 func _on_but_close_right_panel_pressed() -> void:
 	#Elementos visibles - vuelve a dashboard inicial
 	$BUT_RightPanel.visible = true
+	
+	#Elementos invisibles - vuelve a dashboard inicial
 	$BUT_CloseRightPanel.visible = false
 	$CR_RightPanel.visible = false
 	$BUT_PanelMejoras.visible = false
@@ -62,7 +62,7 @@ func _on_but_close_right_panel_pressed() -> void:
 	
 	
 
-
+#first power up excution - gnomos
 func _on_but_mejoras_gnomos_com_pressed() -> void:
 	if PotionCount >= 24: 
 		PotionCount = PotionCount - 24
@@ -70,13 +70,13 @@ func _on_but_mejoras_gnomos_com_pressed() -> void:
 		$BUT_MejorasGnomosCom.disabled = true
 		
 
-
+#general menu - open mision panel
 func _on_but_panel_misiones_pressed() -> void:
 	$BUT_MejorasGnomosCom.visible = false
 	$LBL_MejorasGnomos.visible = false
 	$LBL_MejorasGnomosDesc.visible = false
 
-
+#general menu- reopen power up panel
 func _on_but_panel_mejoras_pressed() -> void:
 	$BUT_MejorasGnomosCom.visible = true
 	$LBL_MejorasGnomos.visible = true
