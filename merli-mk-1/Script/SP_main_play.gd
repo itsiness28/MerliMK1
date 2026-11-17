@@ -1,5 +1,6 @@
 extends Node2D
 var PotionCount = 0 
+var Modificator = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -42,10 +43,11 @@ func _on_but_close_left_panel_pressed() -> void:
 
 
 func _on_but_potion_pressed() -> void:
-	PotionCount = PotionCount + 1
+	PotionCount = PotionCount + (1 * Modificator)
 
 
 func _on_but_close_right_panel_pressed() -> void:
+	#Elementos visibles - vuelve a dashboard inicial
 	$BUT_RightPanel.visible = true
 	$BUT_CloseRightPanel.visible = false
 	$CR_RightPanel.visible = false
@@ -57,3 +59,25 @@ func _on_but_close_right_panel_pressed() -> void:
 	$LBL_MejorasGnomos.visible = false
 	$LBL_MejorasGnomosDesc.visible = false
 	$BUT_MejorasGnomosCom.visible = false
+	
+	
+
+
+func _on_but_mejoras_gnomos_com_pressed() -> void:
+	if PotionCount >= 24: 
+		PotionCount = PotionCount - 24
+		Modificator = 2
+		$BUT_MejorasGnomosCom.disabled = true
+		
+
+
+func _on_but_panel_misiones_pressed() -> void:
+	$BUT_MejorasGnomosCom.visible = false
+	$LBL_MejorasGnomos.visible = false
+	$LBL_MejorasGnomosDesc.visible = false
+
+
+func _on_but_panel_mejoras_pressed() -> void:
+	$BUT_MejorasGnomosCom.visible = true
+	$LBL_MejorasGnomos.visible = true
+	$LBL_MejorasGnomosDesc.visible = true
