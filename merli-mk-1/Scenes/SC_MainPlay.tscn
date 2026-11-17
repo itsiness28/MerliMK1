@@ -213,6 +213,7 @@ text = "Comenzar misión"
 [connection signal="button_down" from="BUT_RightPanel" to="." method="_on_but_right_panel_button_down"]
 [connection signal="pressed" from="BUT_CloseLeftPanel" to="." method="_on_but_close_left_panel_pressed"]
 [connection signal="pressed" from="BUT_CloseRightPanel" to="." method="_on_but_close_right_panel_pressed"]
+[connection signal="pressed" from="BUT_PanelMejoras" to="." method="_on_but_panel_mejoras_pressed"]
 [connection signal="pressed" from="BUT_PanelMisiones" to="." method="_on_but_panel_misiones_pressed"]
 [connection signal="pressed" from="BUT_MejorasGnomosCom" to="." method="_on_but_mejoras_gnomos_com_pressed"]
 [connection signal="pressed" from="BUT_MisionActivated" to="." method="_on_but_mision_activated_pressed"]
