@@ -146,7 +146,9 @@ offset_top = 101.0
 offset_right = 1135.0
 offset_bottom = 228.0
 theme_override_font_sizes/font_size = 15
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+text = "Te da un por dos.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -161,7 +163,6 @@ offset_bottom = 323.0
 text = "Comprar"
 
 [node name="PB_Mision1" type="ProgressBar" parent="." unique_id=1193420876]
-visible = false
 offset_left = 14.0
 offset_top = 577.0
 offset_right = 166.0

@@ -16,3 +16,7 @@ func _on_but_play_button_down() -> void: #Conectar a play cuando exista la escen
 
 func _on_but_escape_button_down() -> void:
 	get_tree().quit()
+
+
+func _on_but_options_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/SC_OptionsMenu.tscn")

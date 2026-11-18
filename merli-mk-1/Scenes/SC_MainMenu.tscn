@@ -23,13 +23,23 @@ theme_override_font_sizes/font_size = 71
 text = "Jugar"
 
 [node name="BUT_Escape" type="Button" parent="." unique_id=749548754]
-offset_left = 477.0
-offset_top = 355.0
-offset_right = 665.0
-offset_bottom = 406.0
+offset_left = 480.0
+offset_top = 447.0
+offset_right = 668.0
+offset_bottom = 498.0
 theme_override_fonts/font = ExtResource("2_xkpew")
-theme_override_font_sizes/font_size = 37
+theme_override_font_sizes/font_size = 48
 text = "Salir"
+
+[node name="BUT_Options" type="Button" parent="." unique_id=1601774960]
+offset_left = 448.0
+offset_top = 345.0
+offset_right = 710.0
+offset_bottom = 421.0
+theme_override_fonts/font = ExtResource("2_xkpew")
+theme_override_font_sizes/font_size = 58
+text = "Opciones"
 
 [connection signal="button_down" from="BUT_Play" to="." method="_on_but_play_button_down"]
 [connection signal="button_down" from="BUT_Escape" to="." method="_on_but_escape_button_down"]
+[connection signal="pressed" from="BUT_Options" to="." method="_on_but_options_pressed"]

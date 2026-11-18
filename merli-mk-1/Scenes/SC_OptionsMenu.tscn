@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://m3sdqjqrgltj"]
+
+[ext_resource type="FontFile" uid="uid://52uchsfpab87" path="res://Fonts/PositionsByArixbored-Regular .otf" id="1_eeqf7"]
+
+[node name="ScOptionsMenu" type="Node2D" unique_id=1643634617]
+
+[node name="CR_Background" type="ColorRect" parent="." unique_id=1233958439]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1168.0
+offset_bottom = 656.0
+color = Color(0.9529412, 0.32156864, 0.44705883, 1)
+
+[node name="LBL_OptionsTitle" type="Label" parent="." unique_id=661848160]
+offset_left = 27.0
+offset_top = 35.0
+offset_right = 486.0
+offset_bottom = 155.0
+theme_override_fonts/font = ExtResource("1_eeqf7")
+theme_override_font_sizes/font_size = 100
+text = "OPCIONES"
